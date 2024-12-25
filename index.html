@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random No Button</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/> 
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted playsinline id="background-video" style="display: none;">
+        <source src="IMG_9603.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio id="background-audio" style="display: none;">
+        <source src="Eminem - Mockingbird (Lyrics).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="wrapper">
+        <h2 class="question">Do you love me?</h2>
+        <img class="gif" alt="gif" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjJvdWZzYXc1NGJ6aGp1cDE3b2dyNnVzOGN1andkMjVrMmRzeGwwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3OhXBaoR1tVPW/giphy.gif" />
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+        <div class="slider-container" style="display:none;">
+            <div class="slick-slider">
+                <!-- Images will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative; /* To ensure the wrapper is positioned relative to the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    transition: background 0.5s ease;
+    overflow: hidden; /* Prevent scrollbars due to the fixed video */
+}
+
+#wrapper, .wrapper {
+    position: relative;
+    z-index: 2; /* Ensure wrapper is above the video */
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+    /* Ensure the video does not repeat by removing loop attribute */
+}
+
+/* Existing Styles */
+.wrapper {
+    width: 90%;
+    max-width: 800px; /* Increased width for better display */
+    text-align: center;
+    z-index: 2; /* Ensure it's above the video */
+}
+
+h2 {
+    font-size: 2em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.btn-group {
+    margin-top: 50px;
+    position: relative;
+    height: 50px;
+}
+
+button {
+    width: 150px;
+    height: 100%;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    transition: background 0.3s, color 0.3s;
+}
+
+button.yes-btn {
+    background: #e94d58;
+}
+
+button.no-btn {
+    background: white;
+    color: #e94d58;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Slick Slider Custom Styles */
+.slider-container {
+    margin-top: 30px;
+}
+
+.slick-slider {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Adjust Slick arrows */
+.slick-prev:before, .slick-next:before {
+    color: #e94d58;
+}
